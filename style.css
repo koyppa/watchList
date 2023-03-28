@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@252&display=swap');
+
+:root{
+    --dark: #3D1F1D;
+    --red: #A73728;
+    --orange: #DF643F;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+    /* min-height: 100vh; */
+	color: #FFF;
+	background-color: var(--dark);
+}
+
+/* Ajouter un élément */
+
+.addElement{
+    padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--orange);
+    margin-bottom: 10px;
+    /* opacity: 60%; */
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--red);
+    width: 50px;
+    height: 5px;
+}
+
+.formAddElement{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#elementInput {
+    /* flex: 1 1 0%; */
+	background-color: var(--red);
+    margin-bottom: 10px;
+    /* opacity: 15%; */
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--dark);
+	font-size: 15px;
+    font-weight: bold;
+}
+
+#elementInput::placeholder{
+    color: var(--dark);
+    font-weight: bold;
+    opacity: 70%;
+}
+
+#submit {
+    color: var(--orange);
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#submit:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Liste des éléments */
+
+.elementList{
+    padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.affichageElements {
+    font-size: 20px;
+    opacity: 80%; 
+    font-weight: bold; 
+    padding-right: 50px;
+}
+
+.nomTab {
+    width:50%; 
+    max-width: 55%;
+}
+
+.saisonsTab {
+    width: 100px;
+}
+
+td {
+    padding-right: 40px;  
+} 
+
+tr:nth-child(even) { 
+    color: #A73728; 
+}
+
+tr:nth-child(odd)  { 
+    color: #DF643F;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* modification d'un élément */
+
+.modifyElement{
+    padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+
+
